@@ -28,8 +28,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto"
           >
-            Full-stack developer passionate about creating modern web applications 
-            with React, TypeScript, and cutting-edge technologies.
+            Versatile professional with expertise in customer support, marketing, and training, plus technical skills in HTML/CSS, C, and Python. Bridging the gap between users, technology, and business growth.
           </motion.p>
           
           <motion.div
