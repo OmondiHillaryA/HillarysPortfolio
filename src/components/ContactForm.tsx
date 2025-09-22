@@ -39,8 +39,8 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="section-padding">
-      <div className="container-max max-w-2xl">
+    <section className="py-20 w-full flex justify-center">
+      <div className="container px-4 md:px-8 max-w-lg">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -108,13 +108,15 @@ export default function ContactForm() {
             )}
           </div>
           
-          <button
+          <motion.button
             type="submit"
             disabled={isSubmitting}
             className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}
-          </button>
+          </motion.button>
           
           {submitStatus === 'success' && (
             <p className="text-green-600 text-center">Message sent successfully!</p>
